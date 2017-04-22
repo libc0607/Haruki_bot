@@ -8,7 +8,7 @@ import telebot
 from bot_token import HARUKI_BOT_TOKEN
 from bot_token import KAZUSA_BOT_TOKEN
 from x3xb import X3XB
-from sinario import SINARIO
+from scenario import SCENARIO
 #import bot_utils
 
 
@@ -29,7 +29,7 @@ def send_help(message):
 @haruki.message_handler(commands=['replay'])
 def send_replay(message):
     print('white!')
-    white_script = random.choice(SINARIO)
+    white_script = random.choice(SCENARIO)
     for sentence in white_script:
         print(sentence)
         time.sleep(sentence[1])
