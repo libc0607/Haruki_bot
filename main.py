@@ -24,7 +24,7 @@ def send_welcome(message):
 
 @haruki.message_handler(commands=['help'])
 def send_help(message):
-    haruki.reply_to(message, '源码在https://github.com/libc0607/Haruki_bot，抄了很多@fython的Bot代码')
+    haruki.reply_to(message, '源码在https://github.com/libc0607/Haruki_bot ，抄了很多@fython的Bot代码')
 
 @haruki.message_handler(commands=['replay'])
 def send_replay(message):
